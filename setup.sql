@@ -21,7 +21,8 @@ CREATE TABLE users (
     id INT NOT NULL AUTO_INCREMENT, 
 	name VARCHAR(100) NOT NULL, 
 	user_id VARCHAR(80) NOT NULL, 
-	password_hash VARCHAR(80) NULL,  
+	password_hash VARCHAR(80) NULL,
+    entorno VARCHAR(80) NULL,  
     PRIMARY KEY (id)
 ) AUTO_INCREMENT = 1000 ;
 
@@ -38,8 +39,8 @@ INSERT INTO languages(lang) values ('.Net');
 INSERT INTO languages(lang) values ('Node');
 
 
-INSERT INTO users(name, user_id, password_hash) VALUES('Admin SB', 'adminsb', '$2b$10$V.7UcIFjqRHDenkdZREO8O8kKmtCnu.aiO5PfoWWAGvkbQEMTjb5y');
-INSERT INTO users(name, user_id, password_hash) VALUES('Usuario Test', 'user1', '$2b$10$/SY47jfAgxyFY5ynzn7XpO7WkKqrYiBMluLAmGozdjCaeo8vaZyLm');
+INSERT INTO users(name, user_id, password_hash, entorno) VALUES('Admin SB', 'adminsb', '$2b$10$V.7UcIFjqRHDenkdZREO8O8kKmtCnu.aiO5PfoWWAGvkbQEMTjb5y', 'epd');
+INSERT INTO users(name, user_id, password_hash, entorno) VALUES('Usuario Test', 'user1', '$2b$10$/SY47jfAgxyFY5ynzn7XpO7WkKqrYiBMluLAmGozdjCaeo8vaZyLm', 'epi1');
 
 
 INSERT INTO environments(environment) VALUES('epd');
